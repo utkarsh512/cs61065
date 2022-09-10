@@ -9,18 +9,24 @@ Answer
 Request
 -------
 
-```bash
-curl --url https://goerli.infura.io/v3/d9cc4aec6c6b4aeda20843e42ef47213 \
--X POST \
--H "Content-Type: application/json" \
---data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "eth_gasPrice",
+  "params": [],
+  "id": 1
+}
 ```
 
 Response
 --------
 
 ```json
-{"jsonrpc":"2.0","id":1,"result":"0x5f5e0fe"}
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": "0x5f5e0fe"
+}
 ```
 
 
@@ -35,18 +41,26 @@ Answer
 Request
 -------
 
-```bash
-curl --url https://goerli.infura.io/v3/d9cc4aec6c6b4aeda20843e42ef47213 \
--X POST \
--H "Content-Type: application/json" \
---data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0x78f20591bc53a4a06d28cc3a841608dc8637e669999f9cc854addd0a66024e78"],"id":1}'
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBlockTransactionCountByHash",
+  "params": [
+    "0x78f20591bc53a4a06d28cc3a841608dc8637e669999f9cc854addd0a66024e78"
+  ],
+  "id": 1
+}
 ```
 
 Response
 --------
 
 ```json
-{"jsonrpc":"2.0","id":1,"result":"0x3f"}
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": "0x3f"
+}
 ```
 
 
@@ -66,11 +80,15 @@ transactionIndex: 212
 Request
 -------
 
-```bash
-curl --url https://goerli.infura.io/v3/d9cc4aec6c6b4aeda20843e42ef47213 \
--X POST \
--H "Content-Type: application/json" \
---data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x4210f581dda42ea2a2676fefa9edf784095a30ae2b49920e0965588d8fa78bf9"],"id":1}'
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getTransactionByHash",
+  "params": [
+    "0x4210f581dda42ea2a2676fefa9edf784095a30ae2b49920e0965588d8fa78bf9"
+  ],
+  "id": 1
+}
 ```
 
 Response
@@ -112,18 +130,24 @@ Answer
 Request
 -------
 
-```bash
-curl --url https://goerli.infura.io/v3/d9cc4aec6c6b4aeda20843e42ef47213 \
--X POST \
--H "Content-Type: application/json" \
---data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":1}'
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "net_peerCount",
+  "params": [],
+  "id": 1
+}
 ```
 
 Response
 --------
 
 ```json
-{"jsonrpc":"2.0","id":1,"result":"0x11"}
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": "0x11"
+}
 ```
 
 A.5
@@ -137,18 +161,27 @@ Answer
 Request
 -------
 
-```bash
-curl --url https://goerli.infura.io/v3/d9cc4aec6c6b4aeda20843e42ef47213 \
--X POST \
--H "Content-Type: application/json" \
---data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x35F18427567108F800BDC2784277B9246eED37fA", "latest"],"id":1}'
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBalance",
+  "params": [
+    "0x35F18427567108F800BDC2784277B9246eED37fA",
+    "latest"
+  ],
+  "id": 1
+}
 ```
 
 Response
 --------
 
 ```json
-{"jsonrpc":"2.0","id":1,"result":"0x1b0fa656d7c77b18"}
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": "0x1b0fa656d7c77b18"
+}
 ```
 
 
@@ -163,11 +196,16 @@ Answer
 Request
 -------
 
-```bash
-curl --url https://goerli.infura.io/v3/d9cc4aec6c6b4aeda20843e42ef47213 \
--X POST \
--H "Content-Type: application/json" \
---data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x52a96a", "0x1"],"id":1}'
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getTransactionByBlockNumberAndIndex",
+  "params": [
+    "0x52a96a",
+    "0x1"
+  ],
+  "id": 1
+}
 ```
 
 Response
