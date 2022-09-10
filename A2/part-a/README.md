@@ -1,3 +1,34 @@
+A.0
+===
+
+Answer
+------
+
+`7567000`
+
+Request
+-------
+
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "eth_blockNumber",
+  "params": [],
+  "id": 1
+}
+```
+
+Response
+--------
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": "0x737698"
+}
+```
+
 A.1
 ===
 
